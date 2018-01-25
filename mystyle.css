@@ -1,0 +1,307 @@
+body {
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+h1 {
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	margin-left: 25%;
+	margin-bottom: 15%;
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+}
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #d0d4db;
+ }
+.logo {
+	width: 40%;
+	height: auto;
+	margin-left: 30%
+
+}
+.EmailSent {
+	font-size: 14px;
+}
+.LoginBox {
+    box-sizing: content-box;    
+    width: 25%;
+    height: 400px;
+    padding: 50px;    
+    border: 2px solid gray;
+    margin-left: 33%;
+    margin-top: 7%;
+}
+.LoginInput {
+	width: 100%;
+	padding: 5px;
+}
+.LoginFailed {
+	color: #f44242;
+	font-size: 13px;
+}
+.LoginForgot {
+	margin-left: 30%;
+	position: center;
+	color: #000000;
+	font-size: 14px;
+}
+.SubmitButton {
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px;
+  display: block;
+  background-color: #00aaff;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-size: 15px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.18s ease-in-out;
+  -moz-transition: all 0.18s ease-in-out;
+  transition: all 0.18s ease-in-out;
+}
+
+.SubmitButton:hover {
+  background-color: #ffffff;
+  color: #00aaff;
+  border-color: #00aaff;
+  cursor: pointer;
+
+}
+.CancelButton {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 25%;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.CancelButton:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+  -webkit-border-radius: 7px;
+  -webkit-transition: all 0.18s ease-in-out;
+  -moz-transition: all 0.18s ease-in-out;
+  transition: all 0.18s ease-in-out;
+  font-family: 'Quicksand', sans-serif;
+
+
+}
+
+.datestyle{
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 30%;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+.inputstyle{
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 30%;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+.adduser{
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 50px;
+}
+.documents{
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.btn-group button {
+    background-color: #ef5350; /* red background */
+    border: 2px solid black; /* black border */
+    color: black; /* black text */
+    padding: 100px;
+    margin: 3px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    width: 549px;
+    height: 270px;
+ 
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #ffbcaf;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+#schedicons{
+  font-size: 50px;
+}
+#navbar{
+	background-color: #b71c1c;
+	border-radius: 0;
+
+}
+#navbarcolor{
+	background-color: #b71c1c;
+
+}
+#right{
+	float:right;
+}
+#navlink{
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	margin: 8px 15px 8px 15px;
+
+}
+#navbrand{
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
+}
+.brandlogo{
+
+}
+
+#power{
+	color: #ffffff;
+	padding-top: 20px;
+	padding-left: 20px; 
+	padding-right: 15px; 
+	font-size: 24px;
+	text-decoration: none;
+}
+
+@media (max-width:600px) {
+  .logo{
+    width:50%; /*The width is 100%, when the viewport is 800px or smaller*/
+  }
+  .LoginBox{
+  	 height: auto;
+  }
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(-10px);
+
+}
+
+.hvr-selected:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+   transform: translateY(-8px);
+
+}
+.hvr-text{
+	transform: translateY(-8px);
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.bar{
+    width: 30px;
+    height: 2px;
+    background-color: #eeeeee;
+    margin: 6px 0;
+}
