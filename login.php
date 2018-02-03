@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
         echo "<input type='submit' name='cancel' value='Back' onclick='goBack()'>";
     }else{
 
-    	$query = "SELECT * from login where username = '$username' AND password = '$password'";
+    	$query = "SELECT * from login where username = '$username' AND password = md5('$password')";
     	$result = mysqli_query($conn, $query);
 
     	$row = mysqli_fetch_assoc($result);
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
         if (is_array($row) && !empty($row)) {
             $_SESSION['username'] = $row['username'];
 
-            header('Location: home.html');
+            header('Location: attendance.html');
         } else {
             header('Location: loginFailed.html');
         }

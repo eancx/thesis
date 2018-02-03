@@ -23,6 +23,8 @@ if(isset($_POST['submit'])){
 										  values ('$username', md5('$password'), '$name', '$email', '$contactnumber')";
 				mysqli_query($conn, $insertquery) or die(mysqli_error());
                 header('Location: newuser.html');
+			} else {
+				echo "<script type='text/javascript'>alert('Passwords do not match.'); window.history.back();</script>";
 			}
 		} else{
             echo "<script type='text/javascript'>alert('Fill all fields.'); window.history.back();</script>";

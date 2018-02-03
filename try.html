@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<title>Attendance Monitoring System</title>
+		<meta charset="ultf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<body>
+			<style type="text/css">
+				body {
+  background-color: #222;
+
+}
+
+@-webkit-keyframes ani-mouse {
+  0% {
+  opacity: 1;
+  top: 29%;
+  }
+  15% {
+  opacity: 1;
+  top: 50%;
+  }
+  50% {
+  opacity: 0;
+  top: 50%;
+  }
+  100% {
+  opacity: 0;
+  top: 29%;
+  }
+}
+@-moz-keyframes ani-mouse {
+  0% {
+  opacity: 1;
+  top: 29%;
+  }
+  15% {
+  opacity: 1;
+  top: 50%;
+  }
+  50% {
+  opacity: 0;
+  top: 50%;
+  }
+  100% {
+  opacity: 0;
+  top: 29%;
+  }
+}
+@keyframes ani-mouse {
+  0% {
+  opacity: 1;
+  top: 29%;
+  }
+  15% {
+  opacity: 1;
+  top: 50%;
+  }
+  50% {
+  opacity: 0;
+  top: 50%;
+  }
+  100% {
+  opacity: 0;
+  top: 29%;
+  }
+}
+ .scroll-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.scroll-btn > * {
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #7f8c8d;
+  color: #ffffff;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+  color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 55px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: black;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 2.5s linear infinite;
+  -moz-animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear infinite;
+}
+			</style>
+
+			<nav id="navbar" class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button id="toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<p id="navbrand"><img src="images/iicslogomini.png" width="53" height="60" class="brandlogo" alt="">&nbsp;IICS</p>
+
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<center>
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.html">Attendance</a>
+								</li>
+								<li>
+									<a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.html">Schedules</a>
+								</li>
+								<li>
+									<a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.html">Documents</a>
+								</li>
+								<li>
+									<a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.html">Reports</a>
+								</li>
+								<li>
+									<a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="adduser.html">Add User</a>
+								</li>
+								<li>
+									<a href="login.html" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
+								</li>
+							</ul></center>
+						</div>
+					</div>
+				</nav>
+				<div class="container">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators 
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>-->
+
+						<!-- Wrapper for slides -->
+						<div class="container">
+							<div class="row">
+								<div class="carousel-inner" role="listbox">
+
+									<div class="item active">
+										<div class="col-md-offset-5 col-xs-offset-4">
+											<a href=""><img src="https://www.boyden.com/img/tiles/87877D/john-curtis-oliver-400x400.jpg" alt="..." class="img-responsive img-circle profs" >
+											</a>
+										</div>
+			
+									</div>
+									<div class="item">
+											<div class="col-md-offset-5 col-xs-offset-4">
+											<a href=""><img src="https://www.boyden.com/img/tiles/87877D/john-curtis-oliver-400x400.jpg" alt="..." class="img-responsive img-circle profs" >
+											</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>		
+					  <span class="scroll-btn">
+		<span class="mouse">
+			<span>
+			</span>
+		</span>
+  <p>Scroll Down</p>
+
+</span>
+	
+				</div>
+			</body>
+			</html>
