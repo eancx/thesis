@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\
-    <style type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style type="text/css">
   @media (max-width: 991px) {
     .navbar-header {
       float: none;
@@ -66,7 +66,6 @@
 
   }
 </style>
-</head>
 <body>
   <!-- NAV -->
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
@@ -104,32 +103,30 @@
   </div>
   <!--END NAV-->
   <div class="container">
-    
-    <br/><br/><br/><br/><br/>
-    <div class="row">
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-        <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-8">
-        <p class="documents"> Class Schedule</p>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
-        <select name="classSchedule" id="classSchedule" class="schedstyle">
-          <option value="none">Select class:</option>
-              <option value="4ITA">4ITA</option>
-              <option value="4ITB">4ITB</option>
-              <option value="4ITC">4ITC</option>
-        </select>
-      </div>
 
-    </div>
-    
-   
+    <br/><br/><br/><br/>
     <center>
-      <div class="" style="border=1px;">
-        
-      </div>
-      </center>
-  </div>
-</body>
-</html>
+      <h1 class="adduser">Events</h1>
+      <form action="eventsadded.html">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:&nbsp;&nbsp;&nbsp;<input type="text" name="username" placeholder="Event Name" class="mediuminput" required/></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="username" placeholder="" class="mediuminput" required/></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" name="foopassword" placeholder="" class="shortinput" required/> &nbsp;- &nbsp;<input type="time" name="foopassword" placeholder="" class="shortinput" required/></p>
+        <p>Representative:&nbsp;&nbsp;
+          <select name="classSchedule" id="classSchedule" class="mediuminput">
+            <option value="none">Select Professor:</option>
+            <option value="1itg">Sir Lintag</option>
+          </select>
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue:&nbsp;&nbsp;
+          <select name="classSchedule" id="classSchedule" class="mediuminput">
+            <option value="none">Select Room:</option>
+            <option value="1itg">ICS LAB 1</option>
+          </select>
+        </p>
+        <br/>
+        <button type="button" class="CancelButton" onclick="history.back()">Cancel</button>
+        <button type="submit" class="CancelButton">Set</button>
+      </form>
+    </div>
+  </body>
+  </html>

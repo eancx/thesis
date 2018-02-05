@@ -3,11 +3,11 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 .quicksand {
-	font-size: 16px;
-	font-family: 'Quicksand', sans-serif;
-	font-weight: bold;
-	margin-left: 25%;
-	margin-bottom: 15%;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-left: 25%;
+  margin-bottom: 15%;
 }
 .quicksandHeading {
   font-size: 26px;
@@ -20,13 +20,13 @@ body {
  color: #d0d4db;
 }
 .logo {
-	width: 40%;
-	height: auto;
-	margin-left: 30%
+  width: 40%;
+  height: auto;
+  margin-left: 30%
 
 }
 .EmailSent {
-	font-size: 14px;
+  font-size: 14px;
 }
 .LoginBox {
   box-sizing: content-box;    
@@ -38,18 +38,18 @@ body {
   margin-top: 7%;
 }
 .LoginInput {
-	width: 100%;
-	padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 .LoginFailed {
-	color: #f44242;
-	font-size: 13px;
+  color: #f44242;
+  font-size: 13px;
 }
 .LoginForgot {
-	margin-left: 30%;
-	position: center;
-	color: #000000;
-	font-size: 14px;
+  margin-left: 30%;
+  position: center;
+  color: #000000;
+  font-size: 14px;
 }
 .SubmitButton {
   margin: 0 auto;
@@ -168,6 +168,32 @@ body {
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
 }
+.shortinput {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 16%;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+.mediuminput {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 33.75%;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
 .adduser{
   font-size: 40px;
   font-family: 'Quicksand', sans-serif;
@@ -243,28 +269,28 @@ table, th, td {
   font-size: 50px;
 }
 #navbar{
-	background-color: #b71c1c;
-	border-radius: 0;
+  background-color: #b71c1c;
+  border-radius: 0;
 
 }
 #navbarcolor{
-	background-color: #b71c1c;
+  background-color: #b71c1c;
 
 }
 #right{
-	float:right;
+  float:right;
 }
 #navlink{
-	color: #ffffff;
-	font-size: 16px;
-	font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
   margin: 15px 15px 8px 15px;
 
 }
 #navbrand{
-	color: #ffffff;
-	font-size: 25px;
-	font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
   margin-left: 10px;
   margin-top: 8px;
 }
@@ -273,12 +299,12 @@ table, th, td {
 }
 
 #power{
-	color: #ffffff;
-	padding-top: 28px;
-	padding-left: 20px; 
-	padding-right: 40px; 
-	font-size: 24px;
-	text-decoration: none;
+  color: #ffffff;
+  padding-top: 28px;
+  padding-left: 20px; 
+  padding-right: 40px; 
+  font-size: 24px;
+  text-decoration: none;
 }
 
 @media (max-width:600px) {
@@ -363,7 +389,7 @@ table, th, td {
 
 }
 .hvr-text{
-	transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 .hvr-grow {

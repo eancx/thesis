@@ -97,17 +97,46 @@
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="adduser.html">Add User</a>
         </li>
         <li>
-          <a href="logout.php" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
+          <a href="login.html" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
         </li>
       </ul>
     </div>
   </div>
   <!--END NAV-->
-  <div class="container">
-    
-    <br/><br/><br/><br/><br/>
-    <p class="documents">Make Up Class</p>
-    <button type="button" class="CancelButton" onclick="history.back()">Cancel</button>
-  </div>
+ <div class="container">
+  <br/><br/><br/><br/><br/>
+  <div class="row">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+      <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-8">
+      <p class="documents">Makeup Class</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-5 col-xs-4">
+     <button type="button" class="BackButton" onclick="window.location.href='addmakeup.html'">Add</button>
+   </div>
+ </div>
+  <center>
+    <table class="table table-bordered table-striped table-hover table-responsive">
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Course</th>
+        <th>Room</th>
+        <th>Professor</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</body>
+</html>
+
 </body>
 </html>

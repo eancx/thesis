@@ -97,14 +97,13 @@
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="adduser.html">Add User</a>
         </li>
         <li>
-          <a href="logout.php" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
+          <a href="login.html" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
         </li>
       </ul>
     </div>
   </div>
   <!--END NAV-->
-    <div class="container">
-    
+  <div class="container">
     <br/><br/><br/><br/><br/>
     <div class="row">
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
@@ -116,36 +115,33 @@
       <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
         <select name="classSchedule" id="classSchedule" class="schedstyle">
           <option value="none">Select section:</option>
-              <option value="1itg">1ITG</option>
-              <option value="3csf">3CSF</option>
-              <option value="3ita">3ITA</option>
-              <option value="4ith">4ITH</option>
+          <option value="1itg">1ITG</option>
+          <option value="3csf">3CSF</option>
+          <option value="3ita">3ITA</option>
+          <option value="4ith">4ITH</option>
         </select>
       </div>
-
     </div>
-    
-   
     <center>
-        <table class="table table-bordered table-striped table-hover table-responsive">
-          <tr>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Course</th>
-            <th>Room</th>
-            <th>Professor</th>
-            <th>Proctor</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-      </center>
+      <table class="table table-bordered table-striped table-hover table-responsive">
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Course</th>
+          <th>Room</th>
+          <th>Professor</th>
+          <th>Proctor</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </center>
   </div>
 </body>
 </html>

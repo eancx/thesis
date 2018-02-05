@@ -19,23 +19,23 @@ if(isset($_POST['roomschedule'])){
 
 	                $count++;
 
-	                $startTime = date('h:iA', strtotime($uploadData[0]));
-	                $endTime = date('h:iA', strtotime($uploadData[1]));
-	                $monday = $uploadData[2];
-	                $tuesday = $uploadData[3];
-	                $wednesday = $uploadData[4];
-	                $thursday = $uploadData[5];
-	                $friday = $uploadData[6];
-	                $saturday = $uploadData[7];
+	                $time = $uploadData[0];
+	                $monday = $uploadData[1];
+	                $tuesday = $uploadData[2];
+	                $wednesday = $uploadData[3];
+	                $thursday = $uploadData[4];
+	                $friday = $uploadData[5];
+	                $saturday = $uploadData[6];
 
 	                if ($count > 1) {
 
-	                    $sql = "INSERT into roomschedule(startTime, endTime, monday, tuesday, wednesday, thursday, friday, saturday)
-	                    	   values ('$startTime', '$endTime','$monday','$tuesday','$wednesday','$thursday','$friday','$saturday')";
+	                    $sql = "INSERT into roomschedule(time, monday, tuesday, wednesday, thursday, friday, saturday)
+	                    						 values ('$time','$monday','$tuesday','$wednesday','$thursday','$friday','$saturday')";
 
-	                    mysqli_query($conn, $sql) or die(mysqli_error());
+	                    mysqli_query($conn,$sql) or die(mysqli_error());
 	                }
 	            }
+
 	            fclose($file);
 	            echo 'CSV File has been successfully uploaded';
 	            header('Location: roomschedule.php');

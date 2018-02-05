@@ -97,7 +97,7 @@
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="adduser.html">Add User</a>
         </li>
         <li>
-          <a href="logout.php" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
+          <a href="login.html" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
         </li>
       </ul>
     </div>
@@ -105,7 +105,7 @@
   <!--END NAV-->
   <div class="container">
     
-    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/>
     <div class="row">
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
         <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
