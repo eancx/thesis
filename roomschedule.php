@@ -106,7 +106,7 @@
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="adduser.html">Add User</a>
         </li>
         <li>
-          <a href="login.html" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
+          <a href="logout.php" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
         </li>
       </ul>
     </div>
@@ -149,7 +149,7 @@
     <?php while($row = mysqli_fetch_assoc($result)){
 
      echo "<tr>";
-     echo "<td>". $row['time'] ."</td>";
+     echo "<td>". $row['startTime'] ." - ". $row['endTime'] ."</td>";
      echo "<td>". $row['monday'] ."</td>";
      echo "<td>". $row['tuesday'] ."</td>";
      echo "<td>". $row['wednesday'] ."</td>";
