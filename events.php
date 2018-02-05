@@ -63,32 +63,6 @@
       font-size: 15px;
       font-family: 'Quicksand', sans-serif;
     }
-    #left{
-      background-color: #fffffff; /* red background */
-      border: 2px solid black; /* black border */
-      color: black; /* black text */
-      cursor: pointer; /* Pointer/hand icon */
-      float: left; /* Float the buttons side by side */
-      font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      width:30%;
-      margin-bottom: 10px;
-    }
-    #right{
-      background-color: #ef5350; /* red background */
-      border: 2px solid black; /* black border */
-      color: black; /* black text */
-      cursor: pointer; /* Pointer/hand icon */
-      float: left; /* Float the buttons side by side */
-      font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      width:30%;
-      margin-bottom: 10px;
-    }
 
   }
 </style>
@@ -108,10 +82,10 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.html">Attendance</a>
+          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="attendance.html">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.html">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.html">Schedules</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.html">Documents</a>
@@ -129,29 +103,12 @@
     </div>
   </div>
   <!--END NAV-->
+
   <div class="container">
+    
     <br/><br/><br/><br/><br/>
-    <div class="center" style="margin-bottom: 20px;">
-      <div class="btn-group">
-
-        <button type="button" onclick="window.location.href='classschedule.php'"><i class="material-icons" id="schedicons">people</i><br/>Class Schedule</button>
-        <button type="button" onclick="window.location.href='facultyschedule.php'"><i class="material-icons" id="schedicons">person</i><br/>Faculty Schedule</button>
-      </div>
-      <div class="btn-group">
-
-        <button type="button" onclick="window.location.href='examschedule.php'"><i class="material-icons" id="schedicons">assignment</i><br/>Exam Schedule</button>
-        <button type="button" onclick="window.location.href='roomschedule.php'"><i class="material-icons" id="schedicons">store_mall_directory</i><br/>Room Schedule</button>
-      </div>
-      <div class="btn-group">
-
-        <button type="button" onclick="window.location.href='makeupclass.php'"><i class="material-icons" id="schedicons">schedule</i><br/>Makeup Class</button>
-        <button type="button" onclick="window.location.href='events.php'"><i class="material-icons" id="schedicons">event</i><br/>Events</button>
-      </div>
-    </div>
-
-
-
-
+    <p class="documents">Events</p>
+    <button type="button" class="CancelButton" onclick="history.back()">Cancel</button>
   </div>
 </body>
 </html>
