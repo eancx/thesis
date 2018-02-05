@@ -15,17 +15,17 @@ if(isset($_POST['roomschedule'])){
 	            $file = fopen($filename, "r");
 	            $count = 0;
 
-	            while (($emapData = fgetcsv($file, 1000, ",")) !== FALSE) {
+	            while (($uploadData = fgetcsv($file, 1000, ",")) !== FALSE) {
 
 	                $count++;
 
-	                $time = $emapData[0];
-	                $monday = $emapData[1];
-	                $tuesday = $emapData[2];
-	                $wednesday = $emapData[3];
-	                $thursday = $emapData[4];
-	                $friday = $emapData[5];
-	                $saturday = $emapData[6];
+	                $time = $uploadData[0];
+	                $monday = $uploadData[1];
+	                $tuesday = $uploadData[2];
+	                $wednesday = $uploadData[3];
+	                $thursday = $uploadData[4];
+	                $friday = $uploadData[5];
+	                $saturday = $uploadData[6];
 
 	                if ($count > 1) {
 
@@ -37,10 +37,10 @@ if(isset($_POST['roomschedule'])){
 	            }
 
 	            fclose($file);
-	            echo 'CSV File has been successfully Imported';
-	            header('Location: roomschedule.html');
+	            echo 'CSV File has been successfully uploaded';
+	            header('Location: roomschedule.php');
 	        } else {
-	            echo 'Invalid File:Please Upload CSV File';
+	            echo "<script type='text/javascript'>alert('Please upload CSV File.'); window.history.back();</script>";
 	        }
 	    }
 	}

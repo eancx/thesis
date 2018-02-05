@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\
+    <style type="text/css">
   @media (max-width: 991px) {
     .navbar-header {
       float: none;
@@ -63,32 +63,6 @@
       font-size: 15px;
       font-family: 'Quicksand', sans-serif;
     }
-    #left{
-      background-color: #fffffff; /* red background */
-      border: 2px solid black; /* black border */
-      color: black; /* black text */
-      cursor: pointer; /* Pointer/hand icon */
-      float: left; /* Float the buttons side by side */
-      font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      width:30%;
-      margin-bottom: 10px;
-    }
-    #right{
-      background-color: #ef5350; /* red background */
-      border: 2px solid black; /* black border */
-      color: black; /* black text */
-      cursor: pointer; /* Pointer/hand icon */
-      float: left; /* Float the buttons side by side */
-      font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      width:30%;
-      margin-bottom: 10px;
-    }
 
   }
 </style>
@@ -130,28 +104,46 @@
   </div>
   <!--END NAV-->
   <div class="container">
+    
     <br/><br/><br/><br/><br/>
-    <div class="center" style="margin-bottom: 20px;">
-      <div class="btn-group">
-
-        <button type="button" onclick="window.location.href='classschedule.php'"><i class="material-icons" id="schedicons">people</i><br/>Class Schedule</button>
-        <button type="button" onclick="window.location.href='facultyschedule.php'"><i class="material-icons" id="schedicons">person</i><br/>Faculty Schedule</button>
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
       </div>
-      <div class="btn-group">
-
-        <button type="button" onclick="window.location.href='examschedule.php'"><i class="material-icons" id="schedicons">assignment</i><br/>Exam Schedule</button>
-        <button type="button" onclick="window.location.href='roomschedule.php'"><i class="material-icons" id="schedicons">store_mall_directory</i><br/>Room Schedule</button>
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-8">
+        <p class="documents"> Class Schedule</p>
       </div>
-      <div class="btn-group">
-
-        <button type="button" onclick="window.location.href='makeupclass.php'"><i class="material-icons" id="schedicons">schedule</i><br/>Makeup Class</button>
-        <button type="button" onclick="window.location.href='events.php'"><i class="material-icons" id="schedicons">event</i><br/>Events</button>
+      <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+        <select name="classSchedule" id="classSchedule" class="schedstyle">
+          <option value="none">Select class:</option>
+              <option value="4ITA">4ITA</option>
+              <option value="4ITB">4ITB</option>
+              <option value="4ITC">4ITC</option>
+        </select>
       </div>
+
     </div>
-
-
-
-
+    
+   
+    <center>
+        <table class="table table-bordered table-striped table-hover table-responsive">
+          <tr>
+            <th>Room</th>
+            <th>Course</th>
+            <th>Time</th>
+            <th>Day</th>
+            <th>Professor</th>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </center>
   </div>
 </body>
 </html>
