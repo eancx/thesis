@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Attendance Monitoring System</title>
   <meta charset="ultf-8">
@@ -82,13 +82,13 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
+          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="attendance.php">Attendance</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -104,35 +104,47 @@
   </div>
   <!--END NAV-->
   <div class="container">
-    <br/><br/><br/><br/><br/>
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
-   </div>
     <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+      <form action="#">
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="row">
+          <div class="col-md-12 col-xs-12">
+            <p>DATE: &nbsp; <input type="date" id="date" class="datestyle"></p>
+          </div>
+          <div class="col-md-12 col-xs-12">
+            <p>ROOM: <select name="room" id="room" class="datestyle">
+              <option value="icslab1">ICS LAB 1</option>
+              <option value="icslab2">ICS LAB 2</option>
+              <option value="icslab3">ICS LAB 3</option>
+              <option value="icslab4">ICS LAB 4</option>
+            </select> </p>
+          </div>
+          <div class="col-md-12 col-xs-12">
+            <p>TIME: &nbsp;&nbsp; <select name="time" id="time" class="datestyle">
+              <option value="7am730am">7:00AM - 7:30AM</option>
+              <option value="730am8am">7:30AM - 8:00AM</option>
+              <option value="8am830am">8:00AM - 8:30AM</option>
+              <option value="830am9am">8:30AM - 9:00AM</option>
+              <option value="930am10am">9:30AM - 10:00AM</option> 
+              <option value="1030am11am">10:30AM - 11:00AM</option> 
+              <option value="1130am12pm">11:30AM - 12:00PM</option> 
+              <option value="1230pm1pm">12:30PM - 1:00PM</option> 
+              <option value="130pm2pm">1:30PM - 2:00PM</option> 
+              <option value="230pm3pm">2:30PM - 3:00PM</option> 
+              <option value="330pm4pm">3:30PM - 4:00PM</option> 
+              <option value="430pm5pm">4:30PM - 5:00PM</option> 
+              <option value="530pm6pm">5:30PM - 6:00PM</option> 
+              <option value="630pm7pm">6:30PM - 7:00PM</option> 
+              <option value="730pm8pm">7:30PM - 8:00PM</option>
+              <option value="830pm9pm">8:30PM - 9:00PM</option>
+            </select> </p><br/>
+          </div>
+        </div>
+        <button type="reset" class="CancelButton">Reset</button>
+        <button type="submit" class="CancelButton">Submit</button>
+      </form>
+      <br/> 
+
     </center>
   </div>
 </body>

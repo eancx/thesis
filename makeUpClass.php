@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Attendance Monitoring System</title>
   <meta charset="ultf-8">
@@ -85,10 +85,10 @@
           <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -103,37 +103,40 @@
     </div>
   </div>
   <!--END NAV-->
-  <div class="container">
-    <br/><br/><br/><br/><br/>
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
+ <div class="container">
+  <br/><br/><br/><br/><br/>
+  <div class="row">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+      <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-8">
+      <p class="documents">Makeup Class</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-5 col-xs-4">
+     <button type="button" class="BackButton" onclick="window.location.href='addMakeUp.php'">Add</button>
    </div>
-    <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </center>
-  </div>
+ </div>
+  <center>
+    <table class="table table-bordered table-striped table-hover table-responsive">
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Course</th>
+        <th>Room</th>
+        <th>Professor</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</body>
+</html>
+
 </body>
 </html>

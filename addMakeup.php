@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Attendance Monitoring System</title>
   <meta charset="ultf-8">
@@ -66,7 +66,6 @@
 
   }
 </style>
-</head>
 <body>
   <!-- NAV -->
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
@@ -85,10 +84,10 @@
           <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -104,36 +103,35 @@
   </div>
   <!--END NAV-->
   <div class="container">
-    <br/><br/><br/><br/><br/>
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
-   </div>
+
+    <br/><br/><br/><br/>
     <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </center>
-  </div>
-</body>
-</html>
+      <h1 class="adduser">Makeup Class</h1>
+      <form action="makeUpClassAdded.php">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="username" placeholder="Username" class="mediuminput" required/></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" name="foopassword" placeholder="Password" class="shortinput" required/> &nbsp;- &nbsp;<input type="time" name="foopassword" placeholder="Password" class="shortinput" required/></p>
+        <p>&nbsp;&nbsp;&nbsp;Course:&nbsp;&nbsp;
+          <select name="classSchedule" id="classSchedule" class="mediuminput">
+            <option value="none">Select Section:</option>
+            <option value="1itg">1ITG</option>
+          </select>
+        </p>
+        <p>Professor:&nbsp;&nbsp;
+          <select name="classSchedule" id="classSchedule" class="mediuminput">
+            <option value="none">Select Professor:</option>
+            <option value="1itg">Sir Lintag</option>
+          </select>
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room:&nbsp;&nbsp;
+          <select name="classSchedule" id="classSchedule" class="mediuminput">
+            <option value="none">Select Room:</option>
+            <option value="1itg">ICS LAB 1</option>
+          </select>
+        </p>
+        <br/>
+        <button type="button" class="CancelButton" onclick="history.back()">Cancel</button>
+        <button type="submit" class="CancelButton">Set</button>
+      </form>
+    </div>
+  </body>
+  </html>

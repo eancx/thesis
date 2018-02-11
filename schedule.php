@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Attendance Monitoring System</title>
   <meta charset="ultf-8">
@@ -63,6 +63,32 @@
       font-size: 15px;
       font-family: 'Quicksand', sans-serif;
     }
+    #left{
+      background-color: #fffffff; /* red background */
+      border: 2px solid black; /* black border */
+      color: black; /* black text */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      font-size: 25px;
+      font-family: 'Quicksand', sans-serif;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width:30%;
+      margin-bottom: 10px;
+    }
+    #right{
+      background-color: #ef5350; /* red background */
+      border: 2px solid black; /* black border */
+      color: black; /* black text */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      font-size: 25px;
+      font-family: 'Quicksand', sans-serif;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width:30%;
+      margin-bottom: 10px;
+    }
 
   }
 </style>
@@ -85,10 +111,10 @@
           <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -105,35 +131,23 @@
   <!--END NAV-->
   <div class="container">
     <br/><br/><br/><br/><br/>
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
+    <div class="center" style="margin-bottom: 20px;">
+      <div class="btn-group">
+
+        <button type="button" onclick="window.location.href='classSchedule.php'"><i class="material-icons" id="schedicons">people</i><br/>Class Schedule</button>
+        <button type="button" onclick="window.location.href='facultySchedule.php'"><i class="material-icons" id="schedicons">person</i><br/>Faculty Schedule</button>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
-   </div>
-    <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </center>
+      <div class="btn-group">
+
+        <button type="button" onclick="window.location.href='examSchedule.php'"><i class="material-icons" id="schedicons">assignment</i><br/>Exam Schedule</button>
+        <button type="button" onclick="window.location.href='roomSchedule.php'"><i class="material-icons" id="schedicons">store_mall_directory</i><br/>Room Schedule</button>
+      </div>
+      <div class="btn-group">
+
+        <button type="button" onclick="window.location.href='makeUpClass.php'"><i class="material-icons" id="schedicons">schedule</i><br/>Makeup Class</button>
+        <button type="button" onclick="window.location.href='events.php'"><i class="material-icons" id="schedicons">event</i><br/>Events</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

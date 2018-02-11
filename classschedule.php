@@ -82,22 +82,22 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.html">Attendance</a>
+          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.html">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.php">Schedules</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.html">Reports</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="adduser.html">Add User</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="addUser.php">Add User</a>
         </li>
         <li>
-          <a href="logout.php" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
+          <a href="login.php" id="power" class="glyphicon glyphicon-off hvr-grow"></a>
         </li>
       </ul>
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Attendance Monitoring System</title>
   <meta charset="ultf-8">
@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\
+    <style type="text/css">
   @media (max-width: 991px) {
     .navbar-header {
       float: none;
@@ -85,10 +85,10 @@
           <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -104,36 +104,32 @@
   </div>
   <!--END NAV-->
   <div class="container">
+    
     <br/><br/><br/><br/><br/>
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
-   </div>
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-8">
+        <p class="documents"> Class Schedule</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+        <select name="classSchedule" id="classSchedule" class="schedstyle">
+          <option value="none">Select class:</option>
+              <option value="4ITA">4ITA</option>
+              <option value="4ITB">4ITB</option>
+              <option value="4ITC">4ITC</option>
+        </select>
+      </div>
+
+    </div>
+    
+   
     <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </center>
+      <div class="" style="border=1px;">
+        
+      </div>
+      </center>
   </div>
 </body>
 </html>

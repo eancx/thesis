@@ -82,13 +82,13 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
+          <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="attendance.php">Attendance</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -104,36 +104,15 @@
   </div>
   <!--END NAV-->
   <div class="container">
-    <br/><br/><br/><br/><br/>
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
-   </div>
     <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+      <br/><br/><br/><br/>
+      <h1 class="adduser">Upload Document</h1>
+      <br/><br/><br/><br/>
+      <p style="font-size: 20px;">A new document has been uploaded.</p>
+      <br/><br/><br/><br/><br/><br/>
+      <button type="button" class="CancelButton" onclick="history.back()">Back</button>
     </center>
+
   </div>
 </body>
 </html>

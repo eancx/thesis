@@ -1,5 +1,14 @@
+<?php
+
+  include("db_connect.php");
+  session_start();
+
+  $select = "SELECT * from roomschedule";
+  $result = mysqli_query($conn, $select);
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Attendance Monitoring System</title>
   <meta charset="ultf-8">
@@ -85,10 +94,10 @@
           <a  id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="attendance.php">Attendance</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="schedule.php">Schedules</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="schedule.php">Schedules</a>
         </li>
         <li>
-          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float hvr-text hvr-selected" href="documents.php">Documents</a>
+          <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="documents.php">Documents</a>
         </li>
         <li>
           <a id="navlink" class="nav-link hvr-underline-reveal hvr-float" href="reports.php">Reports</a>
@@ -104,36 +113,66 @@
   </div>
   <!--END NAV-->
   <div class="container">
+    
     <br/><br/><br/><br/><br/>
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="documents">Documents</p>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <button type="button" class="BackButton" onclick="history.back()"><i class="glyphicon glyphicon-arrow-left"></i> Back</button>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-       <button type="button" class="BackButton" onclick="window.location.href='addDocument.php'">Add</button>
-     </div>
-   </div>
-    <center>
-      <table class="table table-bordered table-striped table-hover table-responsive">
-        <tr>
-          <th>Date</th>
-          <th>File</th>
-          <th>Category</th>
-          <th>Type of Leave</th>
-          <th>Professor</th>
-          <th>Faculty</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </center>
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-8">
+        <p class="documents"> Room Schedule</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+        <select name="classSchedule" id="classSchedule" class="schedstyle">
+          <option value="none">Select room:</option>
+              <option value="icslab1">ICS LAB 1</option>
+              <option value="icslab2">ICS LAB 2</option>
+              <option value="icslab3">ICS LAB 3</option>
+              <option value="icslab4">ICS LAB 4</option>
+        </select>
+      </div>
+
+    </div>
+
+  <center>
+  <table class='table table-bordered table-striped table-hover table-responsive'>
+    <tr>
+      <th>TIME</th>
+      <th>MONDAY</th>
+      <th>TUESDAY</th>
+      <th>WEDNESDAY</th>
+      <th>THURSDAY</th>
+      <th>FRIDAY</th>
+      <th>SATURDAY</th>
+    </tr>
+
+    <?php while($row = mysqli_fetch_assoc($result)){
+
+     echo "<tr>";
+     echo "<td>". $row['time'] ."</td>";
+     echo "<td>". $row['monday'] ."</td>";
+     echo "<td>". $row['tuesday'] ."</td>";
+     echo "<td>". $row['wednesday'] ."</td>";
+     echo "<td>". $row['thursday'] ."</td>";
+     echo "<td>". $row['friday'] ."</td>";
+     echo "<td>". $row['saturday'] ."</td>";
+     echo "</tr>";
+  
+    } ?>
+  </table>
+  </center>
+      <form action="upload_roomSchedule.php" enctype="multipart/form-data" method="post" role="form">
+            <div class="form-group">
+                <center>
+                    <label for="exampleInputFile">Upload CSV for Room Schedule</label>
+                    <input type="file" name="file[]" size="10000" multiple/> 
+                    <p class="help-block">Only CSV File Format.</p>
+                    <button type="submit" class="btn btn-default" name="roomschedule">Upload</button>
+                </center>
+
+            </div>
+
+        </form>
   </div>
 </body>
 </html>
